@@ -1,42 +1,56 @@
 body{
-    background-color: #E8DCC3 ;
-    font-family: "Italianno", cursive;
-    font-weight: 900;
-    font-style: bold;
-    font-size: 4vh;
-    margin: 0px;
-    margin-bottom: 0px;
-    padding :0px;
+    background-color: #FEFEFE;
+    color:#2f2f2f;
+    font-family: "Open sans";
+    font-weight: 300;
+    font-style: regular;
+    font-size: 18px;
+    line-height: 1.6;;
+
+  
 }
-#header{
-    background-color: #36593f;
+ button {
+  text-decoration: none;
+  background-color: #E8DCC3; 
+  color: #2f2f2f;
+  padding: 2px 24px;
+  border-radius: 6px;
+  font-family: "Playfair display", bold;
+  font-size: 24px;
+  transition: background-color 0.3s ease;
+  max-width:70%;
+  position: relative;
 }
+
+
 
 
 /*Header links*/
+#header{
+    background-color: #91A287;
+}
 .headerDiv{
-    background-color: #36593f;
+    background-color: #91A287;
     
 }
 .headerDiv img{
     width: 5vw;
-    height: 5vh;
+    height: 10vh;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
-.headerDiv button {
-    color:#2f2f2f;
-    background-color:#E8DCC3 ;
-    border-style: ridge;
-    margin-right: .5%;
-    border-radius: 15%;
+.headerDiv button:hover {
+  background-color: #b9ad91;
+  border-radius: 10px;
 }
-.headerDiv button:hover{
-    border-radius: 25%;
-}
+
 /*Hero section*/
 .hero{
     text-align: center;
     margin-bottom: 20%;
-   
+    font-size:30vw;
+    font-family: "Italianno", cursive;
+    background-color: #91A287;
 }
 .hero h1{
     font-size: 25vh;
@@ -67,22 +81,64 @@ body{
 }
 #video{
     position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height: 100%;
+    top:4vh;
+    left:2.5vw;
+    width:95vw;
+    height: 95vh;
+    margin-top:5%;
     object-fit: cover;
     z-index:-1;
 }
-/*content*/
-.content p{
+/*recipies*/
+.recipes{
+    background-color: #F8F6F2;
+}
+.recipes h2{
+    font-family: 'Playfair Display', bold;
+    text-align: center;
+    font-size: 8vh;
+}
+.recipes p{
     padding-bottom: 10%;
     text-align: center;
+    font-family: 'Opens Sans', Regular;
 }
+/*about*/
+.about { 
+    font-style: normal;
+    width: 80vw;
+    position: relative;
+    margin-left: 10vw;
+    text-align: center;
+    background-color: #F8F6F2;
 
+    
+}
+.about h2{
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-weight:bold;
+}
+.about p{
+    font-family: 'Opens sans';
+    font-weight:light;
+    line-height:1.6rem;
+    
+}
+/*Bottom Nav*/
+.bottomNav{
+    background-color: #91A287;
+    display: flex;
+    position: relative;
+
+}
+.bottomNav img{
+    width: 35%;
+    height:35%;
+}
 /*Footer*/
 .footer{
-    background-color: #36593f;
+    background-color: #6F5840;
     position: absolute;
   
     height:auto;
@@ -91,6 +147,7 @@ body{
 
 }
 .footer p{
+    font-weight: 600;
     margin: 0;
     padding: 0;
 }
